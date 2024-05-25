@@ -1,0 +1,335 @@
+/* 
+
+--- COLORS
+ - Primary color: #000066
+ - Tints :  #000099
+ - Shades: 
+ - Accent: 
+ - Grey:  #222 
+ #444
+#99999927
+ 
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 10 / 16 = 0.625 = 62.5%  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  font-size: 1.4rem;
+}
+
+.header {
+  max-width: 1400rem;
+}
+
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.search-bar {
+  background-color: #000066;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem;
+}
+
+.search-box {
+  display: flex;
+  width: 32rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-detail {
+  display: flex;
+  width: 12%;
+  justify-content: space-between;
+  gap: 16%;
+}
+
+.navigation-bar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  color: #000;
+  text-decoration: none;
+}
+
+.hero-box {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  background-image: linear-gradient(#00000094, #00000087), url(../img/hero.png);
+  background-size: fixed;
+}
+
+/* .hero-img {
+  filter: blur(2px) opacity(0.8);
+  width: 100vw;
+  height: 80vh;
+} */
+
+.ku-slogan {
+  font-size: 3.6rem;
+  color: rgba(255, 255, 255, 0.916);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80rem;
+  transform: translate(-50%, -50%);
+}
+
+.logo-img {
+  width: 15rem;
+  height: 5rem;
+}
+
+.logo-image {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ################################################# 
+            Head's Message Section
+####################################################*/
+.message {
+  background-color: #99999927;
+  padding: 0 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.message h2 {
+  color: #222;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.start-sign {
+  color: #000099;
+  font-size: 3rem;
+}
+
+blockquote {
+  margin-left: 4rem;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.quote-owner {
+  font-weight: 600;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  bottom: 1.6rem;
+}
+/* ################################################# 
+            The Card Section
+####################################################*/
+.card-view {
+  padding: 2rem 10rem;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.news-box {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.news-cards {
+  width: 50rem;
+}
+
+.news-img {
+  width: 100%;
+  height: 20rem;
+}
+
+.gallary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 3.2rem;
+  column-gap: 3.2rem;
+}
+
+.gallary-cards {
+  box-shadow: 0 0.6px 1px #222;
+  border-radius: 6px;
+}
+
+.gallary img {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.gallary-cards h3,
+.gallary-cards p,
+.gallary-cards a {
+  padding: 1rem 0;
+  text-decoration: none;
+}
+
+.gallary-cards h3,
+.gallary-cards p {
+  padding: 1rem 2rem;
+}
+
+.date {
+  color: #000066;
+  font-weight: 500;
+}
+
+.gallary-cards h3 {
+  color: #444;
+}
+
+.gallary-cards a {
+  color: #000066;
+}
+
+.card-view:nth-child(even) {
+  background-color: #99999927;
+}
+
+.news-cards {
+  box-shadow: 0 0.5px 0.8px #222;
+  border-radius: 5px;
+}
+
+.news-cards p,
+.news-cards h3,
+.news-cards a {
+  padding: 1rem 2rem;
+}
+
+.news-cards a {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.p-img {
+  margin-right: 3.2rem;
+}
+/* ################################################# 
+            Footer Section
+####################################################*/
+.footer {
+  background-color: #000066;
+  color: #fff;
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 50rem;
+  row-gap: 4rem;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin: 3px 0;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 2rem;
+}
+
+.ku-logo {
+  width: 32rem;
+}
+
+.hover-link {
+  position: relative;
+}
+
+.hover-window {
+  visibility: hidden;
+  transition: all 0.1ss;
+  width: 10rem;
+  height: 15rem;
+  background-color: rgba(255, 255, 255, 0.705);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+}
+
+.main-ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.hover-link:hover .hover-window {
+  visibility: visible;
+}
+
+.hover-window .options li {
+  list-style: none;
+}
+
+.options li {
+  margin-bottom: 1rem;
+}
+
+.hover-link a {
+  border-bottom: 2px solid #333;
+  border-width: 0px;
+}
+
+.hover-link a:hover {
+  border-width: 1px;
+  border-color: #000066;
+}
